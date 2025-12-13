@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HFT Backtest Analysis Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        h3 {
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .metric-box {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-left: 4px solid #3498db;
+            min-width: 200px;
+        }
+        .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .metric-label {
+            font-size: 12px;
+            color: #7f8c8d;
+            text-transform: uppercase;
+        }
+        .positive {
+            color: #27ae60;
+        }
+        .negative {
+            color: #e74c3c;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #fafafa;
+            border-radius: 5px;
+        }
+        .timestamp {
+            color: #95a5a6;
+            font-size: 12px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>High Frequency Trading Backtest Analysis Report</h1>
+        <p class="timestamp">Generated: 2025-12-13 16:26:19</p>
+        
+        <div class="section">
+            <h2>Executive Summary</h2>
+            <div class="metric-box">
+                <div class="metric-label">Final P&L</div>
+                <div class="metric-value negative">
+                    $-87,694.43
+                </div>
+            </div>
+            <div class="metric-box">
+                <div class="metric-label">Total Trades</div>
+                <div class="metric-value">9,826</div>
+            </div>
+            <div class="metric-box">
+                <div class="metric-label">Sharpe Ratio</div>
+                <div class="metric-value">-1.97</div>
+            </div>
+            <div class="metric-box">
+                <div class="metric-label">Max Drawdown</div>
+                <div class="metric-value negative">$-87,324.97</div>
+            </div>
+            <div class="metric-box">
+                <div class="metric-label">Win Rate</div>
+                <div class="metric-value">2.37%</div>
+            </div>
+            <div class="metric-box">
+                <div class="metric-label">Profit Factor</div>
+                <div class="metric-value">0.00</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Fill Data Analysis</h2>
+            <h3>Overview</h3>
+            <table>
+                <tr><th>Metric</th><th>Value</th></tr>
+                <tr><td>Total Trades</td><td>9,826</td></tr>
+                <tr><td>Date Range</td><td>2019-09-13 13:30:01.012805 to 2019-09-13 19:59:58.072088</td></tr>
+                <tr><td>Trading Duration</td><td>0 days 06:29:57.059283</td></tr>
+                <tr><td>Buy Orders</td><td>5,410</td></tr>
+                <tr><td>Sell Orders</td><td>4,416</td></tr>
+            </table>
+            
+            <h3>Symbol Breakdown</h3>
+            <table>
+                <tr><th>Symbol</th><th>Trade Count</th></tr>
+<tr><td>MSFT</td><td>5,186</td></tr><tr><td>AAPL</td><td>4,584</td></tr><tr><td>DIA</td><td>56</td></tr>
+            </table>
+            
+            <h3>Execution Costs</h3>
+            <table>
+                <tr><th>Metric</th><th>Value</th></tr>
+                <tr><td>Total Execution Cost</td><td>$50.0136</td></tr>
+                <tr><td>Average Cost per Trade</td><td>$0.005090</td></tr>
+            </table>
+            
+            <h3>Cost by Symbol</h3>
+            <table>
+                <tr><th>Symbol</th><th>Total Cost</th></tr>
+<tr><td>AAPL</td><td>$26.1951</td></tr><tr><td>DIA</td><td>$0.3867</td></tr><tr><td>MSFT</td><td>$23.4319</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Order Data Analysis</h2>
+
+            <table>
+                <tr><th>Metric</th><th>Value</th></tr>
+                <tr><td>Total Orders</td><td>9,826</td></tr>
+                <tr><td>Filled Orders</td><td>9,826</td></tr>
+                <tr><td>Average Fill Price</td><td>$171.14</td></tr>
+                <tr><td>Total Filled Quantity</td><td>0</td></tr>
+            </table>
+            
+            <h3>Order States</h3>
+            <table>
+                <tr><th>State</th><th>Count</th></tr>
+<tr><td>FILLED</td><td>9,826</td></tr>
+            </table>
+            
+        </div>
+        
+        <div class="section">
+            <h2>P&L Analysis</h2>
+
+            <table>
+                <tr><th>Metric</th><th>Value</th></tr>
+                <tr><td>Initial P&L</td><td>$-369.46</td></tr>
+                <tr><td>Final P&L</td><td>$-87,694.43</td></tr>
+                <tr><td>Net P&L</td><td class="negative">$-87,324.97</td></tr>
+                <tr><td>Maximum P&L</td><td>$-369.46</td></tr>
+                <tr><td>Minimum P&L</td><td>$-87,694.43</td></tr>
+                <tr><td>P&L Range</td><td>$87,324.97</td></tr>
+            </table>
+            
+        </div>
+        
+        <div class="section">
+            <h2>Risk Metrics</h2>
+            <table>
+                <tr><th>Metric</th><th>Value</th></tr>
+                <tr><td>Sharpe Ratio</td><td>-1.9704</td></tr>
+                <tr><td>Maximum Drawdown</td><td class="negative">$-87,324.97</td></tr>
+                <tr><td>Maximum Drawdown %</td><td class="negative">-0.00%</td></tr>
+                <tr><td>Average Drawdown</td><td class="negative">$-39,387.26</td></tr>
+                <tr><td>Volatility (Annualized)</td><td>2.4236</td></tr>
+                <tr><td>Win Rate</td><td>2.37%</td></tr>
+                <tr><td>Profit Factor</td><td>0.0018</td></tr>
+                <tr><td>Winning Periods</td><td>9</td></tr>
+                <tr><td>Losing Periods</td><td>371</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Trade Statistics</h2>
+            <h3>Quantity Statistics</h3>
+            <table>
+                <tr><th>Metric</th><th>Value</th></tr>
+                <tr><td>Mean</td><td>1.66</td></tr>
+                <tr><td>Median</td><td>1.00</td></tr>
+                <tr><td>Max</td><td>5</td></tr>
+                <tr><td>Min</td><td>1</td></tr>
+                <tr><td>Std Dev</td><td>1.48</td></tr>
+            </table>
+            
+            <h3>Price Statistics</h3>
+            <table>
+                <tr><th>Metric</th><th>Value</th></tr>
+                <tr><td>Mean</td><td>$171.14</td></tr>
+                <tr><td>Median</td><td>$140.84</td></tr>
+                <tr><td>Max</td><td>$273.19</td></tr>
+                <tr><td>Min</td><td>$128.00</td></tr>
+                <tr><td>Std Dev</td><td>$37.81</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Visualizations</h2>
+            <p>Comprehensive visualizations have been saved to: <strong>hft_backtest_analysis_enhanced.png</strong></p>
+            <p>The visualization file contains 16 charts covering:</p>
+            <ul>
+                <li>P&L over time and drawdown analysis</li>
+                <li>Trade distributions and patterns</li>
+                <li>Execution costs and order analysis</li>
+                <li>Risk metrics and performance indicators</li>
+            </ul>
+        </div>
+        
+    </div>
+</body>
+</html>
